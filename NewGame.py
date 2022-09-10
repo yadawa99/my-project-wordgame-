@@ -14,7 +14,7 @@ def Word_Bender():
         ["Samsung", "Huawei", "Apple", "Xiaomi", "Lenovo"])  # Sellecting random word for the player to guess letters
     words = words.lower()
     RLetter = random.choice(words)  # selecting random letter to show
-    print("*****************************************")
+    print("______________________________________________")
     print("" + name,yadawa"be ready to play the game!!!")
     print("Start guessing... Go..! ")
     print("You have 10 tries")
@@ -35,7 +35,7 @@ def Word_Bender():
                 F += 1
         print()
         if F == 0:  # When there isn't any failuer user will win
-            print("Congratulations.!!! " + name, "You won!")
+            print("Congratulations.!!! " + name, "You won the game!")
             print()
             time.sleep(1.0)
             break
