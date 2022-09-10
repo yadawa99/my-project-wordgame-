@@ -1,6 +1,6 @@
 import time
 import random
-
+from WORDS import list_of_words
 name = input("Tell me your name? ")#Get the user's name
 name = name.upper()
 
@@ -10,12 +10,11 @@ time.sleep(1)
 
 
 def Word_Bender():
-    words = random.choice(
-        ["Samsung", "Huawei", "Apple", "Xiaomi", "Lenovo"])  # Sellecting random word for the player to guess letters
+    words = random.choice(list_of_words)  # Sellecting random word for the player to guess letters
     words = words.lower()
     RLetter = random.choice(words)  # selecting random letter to show
     print("______________________________________________")
-    print("" + name,yadawa"be ready to play the game!!!")
+    print("" + name,"be ready to play the game!!!")
     print("Start guessing... Go..! ")
     print("You have 10 tries")
     time.sleep(0.5)
