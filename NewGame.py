@@ -72,4 +72,11 @@ def Word_Bender():
                         print("Oops," + name, "You Lost!")
                         print("The word was:" + words)
                         time.sleep(1.0)
+#give a chance to play again
+    playagain=input("Do you want to play again?,(Yes,No):")
+    playagain= playagain.lower()
+    if playagain=="yes":
+        Word_Bender()
+    if playagain=="no":
+        exit()
 Word_Bender()
